@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/calculadora"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/text_view_calculadora"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_um_numero"
+        android:id="@+id/edit_text_numero_um"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_outro_numero"
+        android:id="@+id/edit_text_numero_outro"
+        android:layout_marginBottom="40dp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/calcular"
+        android:id="@+id/button_calcular"
+        android:textAllCaps="true"
+        android:textColor="@color/button_color"
+        />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/result_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="157dp"
+        tools:text="@string/_30" />
+
+
+</LinearLayout>
